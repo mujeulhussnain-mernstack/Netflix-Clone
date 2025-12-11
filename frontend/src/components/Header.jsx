@@ -11,7 +11,7 @@ const Header = () => {
     e.preventDefault();
     // Dispatch logout action here
     try {
-      const res = await axios.get("http://localhost:2020/api/v1/user/logout", {
+      const res = await axios.get("https://netflix-clone-bkhd.onrender.com/api/v1/user/logout", {
         withCredentials: true,
       });
       if (res.data.success) {

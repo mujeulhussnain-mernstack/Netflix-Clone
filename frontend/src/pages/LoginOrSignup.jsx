@@ -22,7 +22,7 @@ const LoginOrSignup = () => {
       };
       try {
         const res = await axios.post(
-          "http://localhost:2020/api/v1/user/login",
+          "https://netflix-clone-bkhd.onrender.com/api/v1/user/login",
           user,
           {
             headers: {
@@ -54,7 +54,7 @@ const LoginOrSignup = () => {
         };
         try {
           const res = await axios.post(
-            "http://localhost:2020/api/v1/user/register",
+            "https://netflix-clone-bkhd.onrender.com/api/v1/user/register",
             user,
             {
               headers: {

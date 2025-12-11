@@ -12,7 +12,7 @@ const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://netflix-clone-bkhd.onrender.com", credentials: true }));
 
 app.use("/api/v1/user", userRoutes)
 
